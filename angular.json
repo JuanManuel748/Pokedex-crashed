@@ -21,16 +21,15 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
             ],
             "scripts": []
-          },
+          }
+          ,
           "configurations": {
             "production": {
               "budgets": [
@@ -92,5 +91,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "dd80cba7-b583-4673-aca0-034c8f91c68d"
   }
 }
