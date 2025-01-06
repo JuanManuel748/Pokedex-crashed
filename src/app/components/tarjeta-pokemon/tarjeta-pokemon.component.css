@@ -1,39 +1,57 @@
 #container{
-    position: relative;
     display: flex;
     align-items: center;
-    isolation: isolate;
-    &.seleccionado::before{
-        position: absolute;
+    gap: 0.5rem;
+    position: relative;
+    overflow:visible;
+    z-index: 0;
+    max-height: 800px;
+    &.selected{
+      ::before{
         content: "";
-        width: calc(100% + 8px);
+        position: absolute;
         height: 120%;
+        width: calc(100% + 8px );
+        top: -4px;
         left: 0px;
         background-color: #da4443;
-        z-index: -1;
+        z-index: -2;
         border-radius: 5px;
+       }
     }
-}
-#flecha{
+  }
+
+  #flecha{
+    position: absolute;
+    margin-left: 8px;
     height: 20px;
-    padding-left: 0 0px;
-}
-#tarjeta{
-    display: flex;
-    align-items: center;
-    background-color: #fceab8;
-    border-radius: 25px 5px 5px 25px;
-    width: 100%;
-    font-size: large;
-    padding-left: 5px;
-    gap: 1rem;
-}
-#circulo{
+    z-index: 1;
+    &.invisible{
+      opacity: 0;
+    }
+  }
+  
+    #tarjeta{
+        display: flex;
+        align-items: center;
+        background-color: #fceab8;
+        border-radius: 25px 5px 5px 25px;
+        width: 100%;
+        font-size: large;
+        padding-left: 5px;
+        gap: 1rem;
+        margin-left: 30px;
+    }
+
+    #circulo{
     border-radius: 50%;
-    height: 30px;
+    height: 25px;
     aspect-ratio: 1;
-    background-color: rgb(0, 0, 0, 0.125);
-}
-img{
-    max-width: 40px;
-}
+    background-color: rgba(0, 0, 0, 0.125);
+    margin-left: 8px;
+  }
+
+  img{
+    max-height: 40px;
+    z-index: 1;
+  }
