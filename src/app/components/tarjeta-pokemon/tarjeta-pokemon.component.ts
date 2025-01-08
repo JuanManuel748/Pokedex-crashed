@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from
 import { CommonModule } from '@angular/common';
 import { Result } from '../../interfaces/pokeapi';
 import { PokemonService } from '../../services/pokemon.service';
+import { Pokemon } from '../../interfaces/pokemon';
 
 @Component({
   selector: 'app-tarjeta-pokemon',
