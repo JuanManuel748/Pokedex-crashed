@@ -3,12 +3,11 @@ import { TarjetaPokemonComponent } from '../tarjeta-pokemon/tarjeta-pokemon.comp
 import { Pokemon } from '../../interfaces/pokemon';
 import { CommonModule } from '@angular/common';
 import { PokemonService } from '../../services/pokemon.service';
-import { HomeComponent } from '../../pages/home/home.component';
 
 @Component({
   selector: 'app-detalle',
   standalone: true,
-  imports: [CommonModule, TarjetaPokemonComponent,HomeComponent],
+  imports: [CommonModule, TarjetaPokemonComponent],
   templateUrl: './detalle.component.html',
   styleUrl: './detalle.component.css'
 })
