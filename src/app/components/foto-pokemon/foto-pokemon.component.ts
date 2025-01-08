@@ -1,15 +1,14 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input, OnChanges } from '@angular/core';
 import { Pokemon } from '../../interfaces/pokemon';
-import { DetalleComponent } from '../detalle/detalle.component';
+import { PokemonService } from '../../services/pokemon.service';
+
 @Component({
   selector: 'app-foto-pokemon',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './foto-pokemon.component.html',
   styleUrl: './foto-pokemon.component.css'
 })
-export class FotoPokemonComponent {
+export class FotoPokemonComponent  {
+ 
 
   @Input() pokemon?:Pokemon;
 }
