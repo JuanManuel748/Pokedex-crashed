@@ -10,7 +10,7 @@ import { DetalleComponent } from '../../components/detalle/detalle.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FotoPokemonComponent, TarjetaPokemonComponent, DetalleComponent],
+  imports: [CommonModule, FotoPokemonComponent, TarjetaPokemonComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
