@@ -8,15 +8,15 @@
     <div class="area">
         <p>
             <span class="etiqueta">Tipo:</span>
-            <span *ngFor="let tipo of pokemon?.types" class="tipo">{{tipo.type.name}}</span>
+            <span *ngFor="let tipo of pokemon?.types ?? []" class="tipo">{{ tipo.type.name }}</span>
         </p>
         <p>
             <span class="etiqueta">Altura:</span>
-            {{pokemon?.height}} cm
+            {{ (pokemon?.height ?? 0) / 10 | number:'1.1-1' }} m
         </p>
         <p>
             <span class="etiqueta">Peso:</span>
-            {{pokemon?.weight}} lbs
+            {{ (pokemon?.weight ?? 0) / 10 | number:'1.1-1' }} kg
         </p>
     </div>
     <div class="area">
