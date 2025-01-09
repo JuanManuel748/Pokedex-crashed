@@ -1,25 +1,23 @@
 <div id="container">
-    <div class="area">
-        <app-tarjeta-pokemon></app-tarjeta-pokemon>
+    <div class="area tarjeta-pokemon-container">
+        <app-tarjeta-pokemon
+        >[fullData]="pokemon?"
+    
+    
+    </app-tarjeta-pokemon>
     </div>
     <div class="area">
         <p>
-            <span class="etiqueta">Tipo</span>
-            <br>
+            <span class="etiqueta">Tipo:</span>
             <span *ngFor="let tipo of pokemon?.types" class="tipo">{{tipo.type.name}}</span>
         </p>
-        <br> <!-- Añade un salto de línea para más espacio -->
-        <a></a>
         <p>
-            <span class="etiqueta">Altura</span>
-            <br>
-            {{pokemon?.height}}
+            <span class="etiqueta">Altura:</span>
+            {{pokemon?.height}} cm
         </p>
-        <br> <!-- Añade un salto de línea para más espacio -->
         <p>
-            <span class="etiqueta">Peso</span>
-            <br>
-            {{pokemon?.weight}}
+            <span class="etiqueta">Peso:</span>
+            {{pokemon?.weight}} lbs
         </p>
     </div>
     <div class="area">

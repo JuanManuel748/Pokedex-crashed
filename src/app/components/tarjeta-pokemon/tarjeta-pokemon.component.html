@@ -1,9 +1,9 @@
 <div id="container" [ngClass]="{selected: selected}">
-    <img  id="flecha" src="assets/img/flecha.png" alt="" *ngIf="selected">
+    <img id="flecha" src="assets/img/flecha.png" alt="" *ngIf="selected">
     <div id="tarjeta" (click)="clicked.emit(idPk)">
         <div id="circulo"></div>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{idPk}}.png" alt="">
-            <span>Nº. {{idPk}}</span>
-            <span *ngIf="data">{{data.name | titlecase}}</span>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{idPk}}.png" alt="">
+        <span>Nº. {{idPk}}</span>
+        <span *ngIf="data">{{data.name | titlecase}}</span>
     </div>
 </div>
