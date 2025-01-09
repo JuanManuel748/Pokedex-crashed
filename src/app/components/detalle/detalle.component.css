@@ -26,24 +26,63 @@
     background-image: linear-gradient(45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8),
     linear-gradient(-45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8);
     background-size: 20px 20px;
+    font-size: larger;
 }
-.area:last-child { background: repeating-linear-gradient( 0deg, #cce486, #cce486 2px, #bfd678 2px, #bfd678 4px ); }
-#descripcionContainer{
+
+.area:last-child {
+    background: repeating-linear-gradient(0deg, #cce486, #cce486 2px, #bfd678 2px, #bfd678 4px);
+}
+
+#descripcionContainer {
+    height: 70%;
+    margin-top: 30px;
     background-color: #f8f7db;
     display: grid;
     grid-template-columns: 20px 1fr 20px;
     border-radius: 10px;
-    div{
-        background-color: #daeac4;
-        height: 80%;
-        margin: 5px;
-    
-
-        &:first-child{
-            border-radius: 0 8px 8px 0;
-        }
-        &:last-child{
-            border-radius: 8px 0 0 8px ;
-        }
-    }
 }
+
+#descripcionContainer div {
+    background-color: #daeac4;
+    margin-top: 10px;
+    height: 90%;
+    margin: 5px;
+}
+
+#descripcionContainer div:first-child {
+    border-radius: 0 8px 8px 0;
+}
+
+#descripcionContainer div:last-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: #67bcea;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px auto;
+    font-size: x-large;
+    width: auto;
+    text-align: center;
+}
+
+.tipo {
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(79, 78, 78);
+    display: inline-block;
+    margin-left: 10px; /* Ajusta la separación entre la palabra "Tipo" y el tipo */
+    padding: 5px 10px;
+    font-size: x-large;
+}
+
+.area p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 20px; /* Mueve los párrafos ligeramente hacia la izquierda */
+    margin-bottom: 20px; /* Añade separación entre los párrafos */
+    margin: 20px 20px;
+}   
