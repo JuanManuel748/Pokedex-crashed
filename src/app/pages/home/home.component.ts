@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   page:number = 1;
   loading:boolean = false;
   pokemonSelected?:Pokemon;
+  detalle:boolean=false;
 
 
   @ViewChild('tarjetas') tarjetasElement:ElementRef | undefined
@@ -50,7 +51,15 @@ export class HomeComponent implements OnInit {
   }
 
   async tarjetaClick(e:string) {
+    if(this.pokemonSelected && e === this.pokemonSelected?.toString()){
+      return this.cambiarEstadoDetalle();
+    }
     console.log(e);
     this.pokemonSelected = await this.pokemonSv.getById(e);
+  }
+
+  cambiarEstadoDetalle(){
+    if(this.pokemonSelected)
+    this.detalle=!this.detalle;
   }
 }

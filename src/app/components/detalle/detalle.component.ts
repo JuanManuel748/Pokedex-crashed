@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 import { TarjetaPokemonComponent } from '../tarjeta-pokemon/tarjeta-pokemon.component';
 import { Pokemon } from '../../interfaces/pokemon';
 import { CommonModule } from '@angular/common';
@@ -13,6 +13,8 @@ import { PokemonService } from '../../services/pokemon.service';
 })
 export class DetalleComponent implements OnChanges {
   @Input() pokemon?: Pokemon;
+  @Input() abierto:boolean=false;
+  @Output() clicked= new EventEmitter();
   descripcion: string = "";
   constructor(private pokemonService: PokemonService) {}
 

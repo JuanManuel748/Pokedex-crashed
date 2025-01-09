@@ -1,4 +1,7 @@
+<div id="backdrop" [ngClass]="{escondido: !abierto}" (click)="clicked.emit()"></div>
+
 <div id="container">
+    <div id="datos">
     <div class="area tarjeta-pokemon-container">
         <app-tarjeta-pokemon [fullData]="pokemon" [selected]="true"></app-tarjeta-pokemon>
     </div>
@@ -23,4 +26,8 @@
             <div></div>
         </div>
     </div>
+</div>
+    <button (click)="clicked.emit()">
+    <img src="./../../../assets/img/flecha.png" alt="" [ngClass]="{girar: abierto}" />
+    </button>
 </div>

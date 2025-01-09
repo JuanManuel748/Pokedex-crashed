@@ -1,9 +1,13 @@
 <main id="container">
   <app-detalle
   [pokemon]="pokemonSelected"
+  (clicked)="cambiarEstadoDetalle()"
+  [abierto]="detalle"
+  [ngClass]="{abierto: detalle}"
   ></app-detalle>
   <app-foto-pokemon
   [pokemon]="pokemonSelected"
+  [ngClass]="{abierto: detalle}"
   ></app-foto-pokemon>
   <div id="tarjetasContainer" #tarjetas (scroll)="onScroll($event)">
     <app-tarjeta-pokemon 
