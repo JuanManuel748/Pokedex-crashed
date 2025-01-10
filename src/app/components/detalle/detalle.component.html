@@ -3,12 +3,13 @@
 <div id="container">
     <div id="datos">
     <div class="area tarjeta-pokemon-container">
+        <p></p>
         <app-tarjeta-pokemon [fullData]="pokemon" [selected]="true"></app-tarjeta-pokemon>
     </div>
     <div class="area">
         <p>
             <span class="etiqueta">Tipo:</span>
-            <span *ngFor="let tipo of pokemon?.types ?? []" class="tipo">{{ tipo.type.name }}</span>
+            <span *ngFor="let tipo of pokemon?.types ?? []" [ngClass]="getTipoClase(tipo.type.name)" class="tipo">{{ tipo.type.name | titlecase}}</span>
         </p>
         <p>
             <span class="etiqueta">Altura:</span>
