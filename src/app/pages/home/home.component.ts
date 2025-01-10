@@ -55,7 +55,7 @@ export class HomeComponent implements OnInit {
       return this.cambiarEstadoDetalle();
     }
     console.log(e);
-    this.pokemonSelected = await this.pokemonSv.getById(e);
+    //this.pokemonSelected = await this.pokemonSv.getById(e);
   }
 
   cambiarEstadoDetalle(){
