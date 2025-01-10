@@ -1,0 +1,106 @@
+<section class="container mt-4">
+    <h2 class="">Añadir Pokémon</h2>
+    <form [formGroup]="pokemonForm" class="pokemon-form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input
+          class="form-control"
+          id="name"
+          type="text"
+          formControlName="name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea
+          class="form-control"
+          id="description"
+          formControlName="description"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="base_experience">Experiencia Base</label>
+        <input
+          class="form-control"
+          id="base_experience"
+          type="number"
+          formControlName="base_experience"
+        />
+      </div>
+      <div class="form-group">
+        <label for="height">Altura</label>
+        <input
+          class="form-control"
+          id="height"
+          type="number"
+          formControlName="height"
+        />
+      </div>
+      <div class="form-group">
+        <label for="weight">Peso</label>
+        <input
+          class="form-control"
+          id="weight"
+          type="number"
+          formControlName="weight"
+        />
+      </div>
+      <div class="form-group">
+        <label for="is_default">Es Predeterminado</label>
+        <input
+          class="form-control"
+          id="is_default"
+          type="checkbox"
+          formControlName="is_default"
+        />
+      </div>
+      <div class="form-group">
+        <label for="order">Orden</label>
+        <input
+          class="form-control"
+          id="order"
+          type="number"
+          formControlName="order"
+        />
+      </div>
+      <div class="form-group">
+        <label for="location_area_encounters">Encuentros en Área</label>
+        <input
+          class="form-control"
+          id="location_area_encounters"
+          type="text"
+          formControlName="location_area_encounters"
+        />
+      </div>
+      <div class="form-group">
+        <label for="sprites">Sprites</label>
+        <input
+          class="form-control"
+          id="sprites"
+          type="text"
+          formControlName="sprites"
+        />
+      </div>
+      <div class="form-group">
+        <label for="types">Tipos</label>
+        <input
+          class="form-control"
+          id="types"
+          type="text"
+          formControlName="types"
+        />
+      </div>
+      <div class="form-group">
+        <label for="species">Especies</label>
+        <input
+          class="form-control"
+          id="species"
+          type="text"
+          formControlName="species"
+        />
+      </div>
+      <div class="d-grid gap-2 d-md-block">
+        <button type="submit" class="btn btn-primary mt-3"><i class="bi bi-plus-lg"></i> Añadir</button>
+      </div>
+    </form>
+  </section>

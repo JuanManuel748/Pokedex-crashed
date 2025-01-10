@@ -1,5 +1,4 @@
-import { Species, Sprites } from "../interfaces/pokemon";
-import { Type} from "../interfaces/pokemon";
+import { Species, Sprites,Type } from "../interfaces/pokemon";
 
 export interface pokemon {
     id?: string;
