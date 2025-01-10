@@ -7,8 +7,7 @@ import { ErrorPageComponent } from './error-page/error-page.component'; // Impor
 
 export const routes: Routes = [
     { path: "", component: HomeComponent },
-    {path: "home", redirectTo: "", pathMatch: "full"},
-    { path: "login", component: LoginComponent },
+    {path: "home", redirectTo: "", pathMatch: "full"}, // Redirige a la portada
     { path: "pokemons", component: PokemonListComponent },
     { path: '**', component: ErrorPageComponent }
 
