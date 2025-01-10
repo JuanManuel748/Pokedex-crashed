@@ -1,11 +1,17 @@
 <header>
-  <a routerLink="/home">
+  <a routerLink="/">
     <div id="tituloContainer">
             <img src="assets/img/pokeball-azul.svg" alt="Pokeball">
             <h1>Pokédex</h1>
             <img src="assets/img/pokeball-azul.svg" alt="Pokeball">
     </div>
   </a>
+  <div id="PartyContainer">
+    <a href="/pokemons">
+      <img src="assets/img/pokeball-azul.svg">
+      Party
+    </a>
+  </div>
     <div id="loginContainer">
       
       <div *ngIf="user$ | async as user; else notLoggedIn">
