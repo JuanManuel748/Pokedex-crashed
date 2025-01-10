@@ -6,20 +6,10 @@ import { ErrorPageComponent } from './error-page/error-page.component'; // Impor
 
 
 export const routes: Routes = [
-    {
-        path: "",
-        component: HomeComponent
-    },
-    {
-        path: "login",
-        component: LoginComponent
-    },
-    {
-        path: "pokemons",
-        component: PokemonListComponent
-
-        
-    },
+    { path: "", component: HomeComponent },
+    {path: "home", redirectTo: "", pathMatch: "full"},
+    { path: "login", component: LoginComponent },
+    { path: "pokemons", component: PokemonListComponent },
     { path: '**', component: ErrorPageComponent }
 
 ];
