@@ -28,7 +28,47 @@ export class DetalleComponent implements OnChanges {
       
     }
   }
-
- 
- 
+  getTipoClase(tipo: string): string {
+    console.log(tipo);
+    switch (tipo) {
+      case 'bug':
+        return 'tipo-bicho';
+      case 'dragon':
+        return 'tipo-dragon';
+      case 'fairy':
+        return 'tipo-hada';
+      case 'fire':
+        return 'tipo-fuego';
+      case 'ghost':
+        return 'tipo-fantasma';
+      case 'ground':
+        return 'tipo-tierra';
+      case 'normal':
+        return 'tipo-normal';
+      case 'psychic':
+        return 'tipo-psiquico';
+      case 'steel':
+        return 'tipo-acero';
+      case 'dark':
+        return 'tipo-siniestro';
+      case 'electric':
+        return 'tipo-electrico';
+      case 'fighting':
+        return 'tipo-lucha';
+      case 'flying':
+        return 'tipo-volador';
+      case 'grass':
+        return 'tipo-planta';
+      case 'poison':
+        return 'tipo-veneno';
+      case 'ice':
+        return 'tipo-hielo';
+      case 'water':
+        return 'tipo-agua';
+      case 'rock':
+        return 'tipo-roca';
+      default:
+        return '';
+    }
+  }
 }
