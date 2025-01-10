@@ -125,6 +125,7 @@ button{
     font-size: x-large;
 }
 
+/* =======    cambiar fondo dependiendo del tipo    ======= */
 .tipo-bicho {
     background-color: rgb(33, 86, 33);
     color: white;
