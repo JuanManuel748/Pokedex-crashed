@@ -1,5 +1,5 @@
 import { Sprites } from "../interfaces/pokemon";
-import { Type, PastType } from "../interfaces/pokemon";
+import { Type} from "../interfaces/pokemon";
 
 export interface pokemon {
     id?: string;

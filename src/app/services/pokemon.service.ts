@@ -54,7 +54,29 @@ export class PokemonService {
 
   async getById(id: string): Promise<pokemon> {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    return await response.json() as pokemon;
+    const pokemon = await response.json();
+
+    const ty = await fetch(pokemon.types[0].type.url);
+    const type = await ty.json();
+
+    const esp = await fetch(pokemon.species.url);
+    const species = await esp.json();
+
+    const ata1 = await fetch(pokemon.moves[0].move.url);
+    const attack1 = await ata1.json();
+
+    const ata2 = await fetch(pokemon.moves[1].move.url);
+    const attack2 = await ata2.json();
+
+    pokemon.adicionales = {
+      type,
+      species,
+      attack1,
+      attack2
+    };
+
+    return pokemon as pokemon;
+    //return await response.json as pokemon;
 
   }
 
@@ -64,4 +86,5 @@ export class PokemonService {
     const texto = resJson.flavor_text_entries.find((texto: any) => texto.language.name === "es");
     return texto ? texto.flavor_text : "No se encontró descripción en español";
   }
+
 }
