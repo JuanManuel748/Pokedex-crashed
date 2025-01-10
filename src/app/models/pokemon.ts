@@ -12,5 +12,4 @@ export interface pokemon {
     location_area_encounters: string;
     sprites: Sprites;
     types: Type[];
-    past_types: PastType[];
 }

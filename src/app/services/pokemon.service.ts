@@ -52,9 +52,10 @@ export class PokemonService {
     return [];
   }
 
-  async getById(id: string | number): Promise<pokemon> {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    return await res.json();
+  async getById(id: string): Promise<pokemon> {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    return await response.json() as pokemon;
+
   }
 
   async getDescription(id: string | number): Promise<string> {
