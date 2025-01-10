@@ -6,6 +6,7 @@ import { PokemonService } from '../../services/pokemon.service';
 import { Result } from '../../interfaces/pokeapi';
 import { Pokemon } from '../../interfaces/pokemon';
 import { DetalleComponent } from '../../components/detalle/detalle.component';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-home',
@@ -30,6 +31,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadList();
+    HeaderComponent.setBackground('blue');
   }
 
   async loadList() {

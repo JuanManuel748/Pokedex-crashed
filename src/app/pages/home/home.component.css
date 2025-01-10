@@ -1,5 +1,5 @@
 #container{
-    height: calc(100vh - 110px);
+    height: calc(110vh - 120px);
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: center;

@@ -1,5 +1,5 @@
-<header>
-  <a routerLink="/">
+<header [ngClass]="getBackground()">
+  <a href="/">
     <div id="tituloContainer">
             <img src="assets/img/pokeball-azul.svg" alt="Pokeball">
             <h1>Pokédex</h1>
@@ -8,8 +8,9 @@
   </a>
   <div id="PartyContainer">
     <a href="/pokemons">
-      <img src="assets/img/pokeball-azul.svg">
-      Party
+      <img src="assets/img/pokeball-white.svg">
+      <p>Party  </p>
+      <img src="assets/img/pokeball-white.svg">
     </a>
   </div>
     <div id="loginContainer">
@@ -23,4 +24,5 @@
       </ng-template> 
        
     </div>
-</header>
+    </header>
+<hr>

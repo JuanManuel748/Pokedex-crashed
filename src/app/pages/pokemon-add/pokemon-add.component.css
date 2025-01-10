@@ -1,7 +1,54 @@
+.container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    background: linear-gradient(
+        to right,
+        #ff0044,
+        #fd0c4c 20%,
+        #ff1553 30%,
+        #ff1f5a 40%,
+        #ff2a63 50%,
+        #ff366b 60%,
+        #fc3f72 70%,
+        #fd4c7b 80%,
+        #ff5a86 90%,
+        #fe658e 100%
+    );
+    */
+    background-color: #fd4c7b;
+}
+
+
+.content{
+    margin: 20px 20px 20px 20px;
+    display: grid;
+    width: 90%;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color:  #628cff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mayor contraste */
+
+}
+
 .pokemon-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
+    grid-template-areas: "sprites sprites"
+                         "name height"
+                         "type weight"
+                         "experience is_default"
+                         "location location"
+                         "orden species"
+                         "description description"
+                         "submit submit";
 }
 
 .form-group {
@@ -22,9 +69,9 @@ label {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #d00000;
     border: none;
-    color: white;
+    color: #ffffff;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -39,32 +86,51 @@ button:hover {
     background-color: #0056b3;
 }
 
-#container{
-    height: calc(100vh - 110px);
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    align-items: center;
-    background: repeating-linear-gradient(
-    0deg,
-    #79a0e3 0px,
-    #79a0e3 10px,
-    #668cd7 10px,
-    #668cd7 50px,
-    #79a0e3 50px,
-    #79a0e3 60px,
-    #5576c5 60px,
-    #5576c5 90px,
-    #79a0e3 90px,
-    #79a0e3 100px,
-    #4c69b8 100px,
-    #4c69b8 140px,
-    #79a0e3 140px,
-    #79a0e3 150px,
-    #4660b4 150px,
-    #4660b4 160px,
-    #79a0e3 160px,
-    #79a0e3 170px,
-    #5576c5 170px,
-    #5576c5 190px
-  );
+.name{
+    grid-area: name;
 }
+
+.height{
+    grid-area: height;
+}
+
+.type{
+    grid-area: type;
+}
+
+.weight{
+    grid-area: weight;
+}
+
+.experience{
+    grid-area: experience;
+}
+
+.is_default{
+    grid-area: is_default;
+}
+
+.location{
+    grid-area: location;
+}
+
+.orden{
+    grid-area: orden;
+}
+
+.species{
+    grid-area: species;
+}
+
+.description{
+    grid-area: description;
+}
+
+.submit{
+    grid-area: submit;
+}
+
+.sprites{
+    grid-area: sprites;
+}
+

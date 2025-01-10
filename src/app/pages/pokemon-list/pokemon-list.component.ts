@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PokemonService } from '../../services/pokemon.service';
 import { pokemon } from '../../models/pokemon';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -19,6 +20,7 @@ export class PokemonListComponent implements OnInit {
     this.pokemonService.getPokemons().subscribe((pokemons) => {
       this.pokemons = pokemons;
     });
+    HeaderComponent.setBackground('red');
   }
 
   deletePokemon(id: string): void {

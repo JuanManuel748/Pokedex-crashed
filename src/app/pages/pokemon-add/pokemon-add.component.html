@@ -1,7 +1,8 @@
 <section class="container mt-4">
-    <h2 class="">Añadir Pokémon</h2>
+  <div class="content">
+    <h1 class="">Añadir Pokémon</h1>
     <form [formGroup]="pokemonForm" class="pokemon-form">
-      <div class="form-group">
+      <div class="form-group name">
         <label for="name">Nombre</label>
         <input
           class="form-control"
@@ -10,7 +11,7 @@
           formControlName="name"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group description">
         <label for="description">Descripción</label>
         <textarea
           class="form-control"
@@ -18,7 +19,7 @@
           formControlName="description"
         ></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group experience">
         <label for="base_experience">Experiencia Base</label>
         <input
           class="form-control"
@@ -27,7 +28,7 @@
           formControlName="base_experience"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group height">
         <label for="height">Altura</label>
         <input
           class="form-control"
@@ -36,7 +37,7 @@
           formControlName="height"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group weight">
         <label for="weight">Peso</label>
         <input
           class="form-control"
@@ -45,7 +46,7 @@
           formControlName="weight"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group is_default">
         <label for="is_default">Es Predeterminado</label>
         <input
           class="form-control"
@@ -54,7 +55,7 @@
           formControlName="is_default"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group order">
         <label for="order">Orden</label>
         <input
           class="form-control"
@@ -63,7 +64,7 @@
           formControlName="order"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group location">
         <label for="location_area_encounters">Encuentros en Área</label>
         <input
           class="form-control"
@@ -72,7 +73,7 @@
           formControlName="location_area_encounters"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group sprites">
         <label for="sprites">Sprites</label>
         <input
           class="form-control"
@@ -81,7 +82,7 @@
           formControlName="sprites"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group types">
         <label for="types">Tipos</label>
         <input
           class="form-control"
@@ -90,7 +91,7 @@
           formControlName="types"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group species">
         <label for="species">Especies</label>
         <input
           class="form-control"
@@ -99,8 +100,9 @@
           formControlName="species"
         />
       </div>
-      <div class="d-grid gap-2 d-md-block">
+      <div class="d-grid gap-2 d-md-block submit">
         <button type="submit" class="btn btn-primary mt-3"><i class="bi bi-plus-lg"></i> Añadir</button>
       </div>
     </form>
-  </section>
+  </div>
+</section>

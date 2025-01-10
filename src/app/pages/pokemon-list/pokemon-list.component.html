@@ -1,36 +1,35 @@
 <div class="container mt-4">
-    <h2>Pokémon</h2>
-    <table *ngIf="pokemons.length > 0" class="table table-striped">
-        <thead class="table-dark">
-            <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Altura</th>
-                <th scope="col">Peso</th>
-                <th scope="col">Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let pokemon of pokemons">
-                <td>{{ pokemon.name }}</td>
-                <td>{{ pokemon.height }}</td>
-                <td>{{ pokemon.weight }}</td>
-                <td>
-                    <div class="d-flex flex-row gap-2 align-items-center">
-                        <button (click)="deletePokemon(pokemon.id!)" class="btn btn-danger btn-sm">
-                            <i class="bi bi-trash"></i> 
-                            <span class="d-none d-md-inline-flex ps-2">Eliminar</span>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="d-grid gap-2 d-md-block">
-        <a class="btn btn-primary" href="/pokemon-add" role="button">
-            <i class="bi bi-plus-lg"></i> Añadir Pokémon
-        </a>
-    </div>
-    <div >
-        <img src="../../../assets/img/error.webp" alt="error"/>
+    <div>
+        <h2>Pokémon</h2>
+        <table *ngIf="pokemons.length > 0" class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Altura</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pokemon of pokemons">
+                    <td>{{ pokemon.name }}</td>
+                    <td>{{ pokemon.height }}</td>
+                    <td>{{ pokemon.weight }}</td>
+                    <td>
+                        <div class="d-flex flex-row gap-2 align-items-center">
+                            <button (click)="deletePokemon(pokemon.id!)" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i> 
+                                <span class="d-none d-md-inline-flex ps-2">Eliminar</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-grid gap-2 d-md-block">
+            <a class="btn btn-primary" href="/pokemon-add" role="button">
+                <i class="bi bi-plus-lg"></i> Añadir Pokémon
+            </a>
+        </div>
     </div>
 </div>
