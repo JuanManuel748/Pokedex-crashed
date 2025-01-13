@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FotoPokemonComponent } from "../../components/foto-pokemon/foto-pokemon.component";
 import { TarjetaPokemonComponent } from "../../components/tarjeta-pokemon/tarjeta-pokemon.component";
 import { PokemonService } from '../../services/pokemon.service';
-import { Result } from '../../interfaces/pokeapi';
-import { Pokemon } from '../../interfaces/pokemon';
+import { Result } from '../../models/pokeapi';
+import { Pokemon } from '../../models/pokemon';
 import { DetalleComponent } from '../../components/detalle/detalle.component';
 import { HeaderComponent } from '../../components/header/header.component';
 
@@ -52,8 +52,8 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  async tarjetaClick(e:string) {
-    if(this.pokemonSelected && e === this.pokemonSelected?.toString()){
+  async tarjetaClick(e: string) {
+    if (this.pokemonSelected && e === this.pokemonSelected?.toString()) {
       return this.cambiarEstadoDetalle();
     }
     this.pokemonSelected = await this.pokemonSv.getById(e);

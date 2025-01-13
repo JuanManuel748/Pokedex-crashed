@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 import { TarjetaPokemonComponent } from '../tarjeta-pokemon/tarjeta-pokemon.component';
-import { Pokemon } from '../../interfaces/pokemon';
+import { Pokemon } from '../../models/pokemon';
 import { CommonModule } from '@angular/common';
 import { PokemonService } from '../../services/pokemon.service';
 

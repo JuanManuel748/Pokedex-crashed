@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { Pokemon } from '../../interfaces/pokemon';
+import { Pokemon } from '../../models/pokemon';
 import { PokemonService } from '../../services/pokemon.service';
 import { CommonModule } from '@angular/common';
 

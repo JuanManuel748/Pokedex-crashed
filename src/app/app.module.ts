@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
-import { PokemonListComponent } from './pages/pokemon-list/pokemon-list.component';
+import { PartyListComponent } from './pages/party-list/party-list.component';
 import { ErrorPageComponent } from './pages/error/error-page.component'; 
 import { routes } from './app.routes'; 
 
@@ -18,10 +18,9 @@ import { routes } from './app.routes';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    PokemonListComponent,
+    PartyListComponent,
     ErrorPageComponent 
   ],
   providers: [],
-  // bootstrap: [AppComponent]
 })
 export class AppModule { }

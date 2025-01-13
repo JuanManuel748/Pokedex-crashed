@@ -14,7 +14,7 @@ import { Observable } from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
   user$: Observable<User | null> | undefined;
-  background: string = '';
+  background: string = 'blue';
   private static background: string = '';
 
   constructor(private authService: AuthService, private router: Router) {
