@@ -1,10 +1,11 @@
 export const environment = {
-    firestore: {
-      projectId: 'pokedex-angular-7938e',
-      appId: '1:855683080669:web:19f96403f4899158ac9634',
-      storageBucket: 'pokedex-angular-7938e.firebasestorage.app',
-      apiKey: 'AIzaSyCpL6VVsKrDrewOfSzhY1wObOBwKOJMoZQ',
-      authDomain: 'pokedex-angular-7938e.firebaseapp.com',
-      messagingSenderId: '855683080669',
-    },
-  };
+  firestore: {
+    apiKey: "AIzaSyBJOiKL7SPgDodXgINspny28bmclnyvQm0",
+    authDomain: "pokedex-2-angular.firebaseapp.com",
+    projectId: "pokedex-2-angular",
+    storageBucket: "pokedex-2-angular.firebasestorage.app",
+    messagingSenderId: "909523837762",
+    appId: "1:909523837762:web:ef328e9c474d5c186ddedb",
+    measurementId: "G-RNE6T6FX8N"
+  }
+};

@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <h2>Equipos</h2>
+    <table *ngIf="parties.length > 0" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let party of parties">
+                <td>{{ party.name }}</td>
+                <td>hola</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

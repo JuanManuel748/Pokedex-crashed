@@ -8,6 +8,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    background-color: #245afb;
     /* user-select: none; */
 }
 hr {

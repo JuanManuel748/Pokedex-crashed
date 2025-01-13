@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Result } from '../../interfaces/pokeapi';
+import { Result } from '../../models/pokeapi';
 import { PokemonService } from '../../services/pokemon.service';
-import { Pokemon } from '../../interfaces/pokemon';
+import { Pokemon } from '../../models/pokemon';
 
 @Component({
   selector: 'app-tarjeta-pokemon',
